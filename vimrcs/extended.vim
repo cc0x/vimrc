@@ -35,20 +35,25 @@ autocmd! bufwritepost ~/.cuncon-vimrc/my_configs.vim source ~/.cuncon-vimrc/my_c
 " => Automatically append closing characters 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 inoremap {      {}<Left>
+inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
 inoremap {}     {}
 inoremap (      ()<Left>
+inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
 inoremap (<CR>  (<CR>)<Esc>O
 inoremap ((     (
 inoremap ()     ()
 inoremap [      []<Left>
+inoremap <expr> ]  strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
 inoremap [<CR>  [<CR>]<Esc>O
 inoremap [[     [
 inoremap []     []
 inoremap "      ""<Left>
+inoremap <expr> " strpart(getline('.'), col('.')-1, 1) == "\"" ? "\<Right>" : "\"\"\<Left>"
 inoremap ""     "
 inoremap '      ''<Left>
+inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\'\'\<Left>"
 inoremap ''     '
 inoremap /*          /**/<Left><Left>
 inoremap /*<Space>   /*<Space><Space>*/<Left><Left><Left>
