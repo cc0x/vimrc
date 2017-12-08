@@ -32,6 +32,31 @@ autocmd! bufwritepost ~/.cuncon-vimrc/my_configs.vim source ~/.cuncon-vimrc/my_c
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Automatically append closing characters 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap {{     {
+inoremap {}     {}
+inoremap (      ()<Left>
+inoremap (<CR>  (<CR>)<Esc>O
+inoremap ((     (
+inoremap ()     ()
+inoremap [      []<Left>
+inoremap [<CR>  [<CR>]<Esc>O
+inoremap [[     [
+inoremap []     []
+inoremap "      ""<Left>
+inoremap ""     "
+inoremap '      ''<Left>
+inoremap ''     '
+inoremap /*          /**/<Left><Left>
+inoremap /*<Space>   /*<Space><Space>*/<Left><Left><Left>
+inoremap /*<CR>      /*<CR>*/<Esc>O
+inoremap <Leader>/*  /*
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Turn persistent undo on 
 "    means that you can undo even when you close a buffer/VIM
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
