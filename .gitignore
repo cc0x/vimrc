@@ -1,0 +1,7 @@
+temp_dirs/undodir/*
+bundle/goyo.vim/doc/tags*
+bundle/ack.vim/.netrwhist
+bundle/ctrlp.vim/doc/tags*
+my_configs.vim
+tags
+.DS_Store
