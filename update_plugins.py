@@ -27,6 +27,7 @@ tagbar https://github.com/majutsushi/tagbar
 vim-gitgutter https://github.com/airblade/vim-gitgutter
 vim-multiple-cursors https://github.com/terryma/vim-multiple-cursors
 vim-surround https://github.com/tpope/vim-surround
+YouCompleteMe https://github.com/Valloric/YouCompleteMe
 """.strip()
 
 GITHUB_ZIP = '%s/archive/master.zip'
