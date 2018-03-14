@@ -19,7 +19,6 @@ PLUGINS = """
 ack.vim https://github.com/mileszs/ack.vim
 ctrlp.vim https://github.com/ctrlpvim/ctrlp.vim
 goyo.vim https://github.com/junegunn/goyo.vim
-gruvbox https://github.com/morhetz/gruvbox
 lightline.vim https://github.com/itchyny/lightline.vim
 limelight.vim https://github.com/junegunn/limelight.vim
 nerdtree https://github.com/scrooloose/nerdtree

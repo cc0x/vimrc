@@ -105,6 +105,8 @@ flags = [
 '-I/usr/include/pixman-1',
 '-isystem',
 '-I/usr/include/libpng16',
+'-I',
+'../include'
 ]
 
 
