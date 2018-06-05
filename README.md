@@ -31,13 +31,13 @@ Just do a git rebase!
 
 Colors when editing a C file with tagbar:
 
-![Screenshot 1](scrshoots/cfilentagbar.png)
+![Screenshot 1](screenshots/cfilentagbar.png)
 
 [NERD Tree](https://github.com/scrooloose/nerdtree) plugin in a terminal window:
-![Screenshot 2](scrshoots/nerdtree.png)
+![Screenshot 2](screenshots/nerdtree.png)
 
 Distraction free mode using [goyo.vim](https://github.com/junegunn/goyo.vim) and [limelight.vim](https://github.com/junegunn/limelight.vim):
-![Screenshot 3](scrshoots/goyonlime.png)
+![Screenshot 3](screenshots/goyonlime.png)
 
 
 ## Plugins
@@ -50,15 +50,18 @@ I recommend reading the docs of these plugins to understand them better. Each pl
 * [limelight.vim](https://github.com/junegunn/limelight.vim): Hyperfocus-writing in Vim
 * [lightline.vim](https://github.com/itchyny/lightline.vim): A light and configurable statusline/tabline for Vim
 * [NERD Tree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim
-* [pathogen.vim](https://github.com/tpope/vim-pathogen): Manage your vim runtimepath 
 * [tagbar](https://github.com/majutsushi/tagbar): Displays tags in a window
 * [vim-gitgutter](https://github.com/airblade/vim-gitgutter): Show a git diff in the gutter
 * [vim-multi-cursor](https://github.com/terryma/vim-multiple-cursors): True Sublime Text style multiple selections for Vim
+* [vim-surround](https://github.com/tpope/vim-surround): quoting/parenthesizing made simple
+* [vim-plug](https://github.com/junegunn/vim-plug): Minimalist Vim Plugin Manager
 
 
 ## Color scheme
 
 * [tomorrow-theme](https://github.com/chriskempson/tomorrow-theme)
+* [gruvbox](https://github.com/morhetz/gruvbox)
+* [papercolor](https://github.com/NLKNguyen/papercolor-theme)
 
 
 ## How to include your own stuff?

@@ -1,8 +1,19 @@
 """"""""""""""""""""""""""""""
-" => Load pathogen paths
+" => Vim-plug
 """"""""""""""""""""""""""""""
-call pathogen#infect()
-call pathogen#helptags()
+call plug#begin('~/.cuncon-vimrc/bundle')
+Plug 'mileszs/ack.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'majutsushi/tagbar'
+Plug 'airblade/vim-gitgutter'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-surround'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
+call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree
