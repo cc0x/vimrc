@@ -9,14 +9,16 @@ To install it simply do following from your terminal:
     git clone --depth=1 https://github.com/cuncon/cuncon-vimrc.git ~/.cuncon-vimrc
     sh ~/.cuncon-vimrc/install_cuncon_vimrc.sh
 
+For the first time running vim after installation:
+     :PlugInstall
 
 ## Fonts
 
 Some good fonts for developers:
 
-* [IBM Plex Mono font](https://ibm.github.io/type/) (recommended)
+* [Source Code Pro](https://adobe-fonts.github.io/source-code-pro/) (recommended)
+* [IBM Plex Mono font](https://ibm.github.io/type/)
 * [Hack](http://sourcefoundry.org/hack/)
-* [Source Code Pro](https://adobe-fonts.github.io/source-code-pro/)
 
 
 ## How to update to latest version?
@@ -27,7 +29,7 @@ Just do a git rebase!
     git pull --rebase
 
 
-## Some screenshoots
+## Some screenshots
 
 Colors when editing a C file with tagbar:
 
@@ -72,10 +74,11 @@ After you have installed the setup, you can create **~/.cuncon-vimrc/my_configs.
 	map <leader>ct :cd ~/projects/cuncon-vimrc<cr>
 	map <leader>cw :cd ~/projects/linux<cr> 
 
-You can also install your plugins, for instance, via pathogen you can install [vim-rails](https://github.com/tpope/vim-rails):
+You can also install your plugins, for instance, via vim-plug you can install [vim-rails](https://github.com/tpope/vim-rails) by add some thing like this to ~/.cuncon-vimrc/my_config.vim:
 
-	cd ~/.cuncon-vimrc
-	git clone git://github.com/tpope/vim-rails.git bundle/vim-rails
+	call plug#begin('~/.cuncon-vimrc/bundle')
+	Plug 'tpope/vim-rails'
+	call plug#end
 
 
 ## Key Mappings
