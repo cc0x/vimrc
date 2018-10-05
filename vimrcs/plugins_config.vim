@@ -36,7 +36,11 @@ map <leader>j :CtrlP<cr>
 map <c-b> :CtrlPBuffer<cr>
 
 let g:ctrlp_max_height = 20
-let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
+let g:ctrlp_custom_ignore = {
+   \ 'dir': 'node_modules\|\v[\/]\.(git|hg|svn)$',
+   \ 'file': '\v\.(zip|tar.xz|tar.bz2|tar.gz|rpm|deb|exe|so|dll)$'
+   \ }
+let g:ctrl_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
