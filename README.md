@@ -53,7 +53,7 @@ I recommend reading the docs of these plugins to understand them better. Each pl
 * [lightline.vim](https://github.com/itchyny/lightline.vim): A light and configurable statusline/tabline for Vim
 * [NERD Tree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim
 * [tagbar](https://github.com/majutsushi/tagbar): Displays tags in a window
-* [vim-gitgutter](https://github.com/airblade/vim-gitgutter): Show a git diff in the gutter
+* [vim-fugitive](https://github.com/tpope/vim-fugitive): A Git wrapper so awesome
 * [vim-multi-cursor](https://github.com/terryma/vim-multiple-cursors): True Sublime Text style multiple selections for Vim
 * [vim-surround](https://github.com/tpope/vim-surround): quoting/parenthesizing made simple
 * [vim-plug](https://github.com/junegunn/vim-plug): Minimalist Vim Plugin Manager
