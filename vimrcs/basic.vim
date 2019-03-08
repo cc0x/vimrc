@@ -155,9 +155,9 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-colorscheme Tomorrow-Night-Eighties 
-
-set background=dark
+set termguicolors
+let ayucolor="mirage"
+colorscheme ayu
 
 " Set extra options when running in GUI mode
 if has("gui_running")

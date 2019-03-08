@@ -21,8 +21,9 @@ set guioptions-=l
 set guioptions-=L
 
 " Colorscheme
-set background=dark
-colorscheme Tomorrow-Night-Eighties 
+set termguicolors 
+let ayucolor="mirage"
+colorscheme ayu
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
