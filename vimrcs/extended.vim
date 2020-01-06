@@ -30,8 +30,7 @@ set guioptions-=L
 " Colorscheme
 set termguicolors
 set background=dark
-let ayucolor="mirage"
-colorscheme ayu
+colorscheme gruvbox
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

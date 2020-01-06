@@ -9,10 +9,10 @@ cd ~/.cuncon-vimrc
 
 echo 'set runtimepath+=~/.cuncon-vimrc
 
-source ~/.cuncon-vimrc/vimrcs/basic.vim
-source ~/.cuncon-vimrc/vimrcs/filetypes.vim
 source ~/.cuncon-vimrc/vimrcs/plugins_config.vim
+source ~/.cuncon-vimrc/vimrcs/basic.vim
 source ~/.cuncon-vimrc/vimrcs/extended.vim
+source ~/.cuncon-vimrc/vimrcs/filetypes.vim
 
 try
 source ~/.cuncon-vimrc/my_configs.vim

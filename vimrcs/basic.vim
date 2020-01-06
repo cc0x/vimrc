@@ -140,9 +140,8 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 set termguicolors
-let ayucolor="mirage"
-colorscheme ayu
 set background=dark
+colorscheme gruvbox
 
 " Set extra options when running in GUI mode
 if has("gui_running")
