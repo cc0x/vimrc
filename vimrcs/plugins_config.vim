@@ -2,7 +2,6 @@
 " => Vim-plug
 """"""""""""""""""""""""""""""
 call plug#begin('~/.cuncon-vimrc/bundles')
-Plug 'morhetz/gruvbox'
 Plug 'mileszs/ack.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/goyo.vim'
