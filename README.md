@@ -1,33 +1,19 @@
 ![VIM](icon.jpg)
 
-# The lightweight vimrc base on [the ultimate vimrc](https://github.com/amix/vimrc)
+# My lightweight vimrc as GNU Linux and C coding
 
-## Installation
+## Install vimrc
 
-To install it simply do following from your terminal:
-
-    git clone --depth=1 https://github.com/cuncon/cuncon-vimrc.git ~/.cuncon-vimrc
-    sh ~/.cuncon-vimrc/install_cuncon_vimrc.sh
-
-For the first time running vim after installation:
-     :PlugInstall
-
-## Fonts
-
-Some good fonts for developers:
-
-* [Source Code Pro](https://adobe-fonts.github.io/source-code-pro/) (recommended)
-* [IBM Plex Mono font](https://ibm.github.io/type/)
-* [Hack](http://sourcefoundry.org/hack/)
-
-
-## How to update to latest version?
-
-Just do a git rebase!
-
-    cd ~/.cuncon-vimrc
-    git pull --rebase
-
+```
+$ git clone --depth=1 https://github.com/cc0x/vimrc.git ~/.cc-vimrc
+$ sh ~/.cc-vimrc/install_vimrc.sh
+# For the first time running vim after installation
+$ vim
+...
+:PlugUpgrade
+:PlugInstall
+...
+```
 
 ## Some screenshots
 
@@ -41,10 +27,9 @@ Colors when editing a C file with tagbar:
 Distraction free mode using [goyo.vim](https://github.com/junegunn/goyo.vim) and [limelight.vim](https://github.com/junegunn/limelight.vim):
 ![Screenshot 3](screenshots/goyonlime.png)
 
+## Pre-installed plugins
 
-## Plugins
-
-I recommend reading the docs of these plugins to understand them better. Each plugin provides a much better Vim experience!
+Each plugin provides a much better Vim experience! So it's highly recommended that you should read the plugin docs.
 
 * [ack.vim](https://github.com/mileszs/ack.vim): Vim plugin for `the_silver_searcher` (ag) or ack -- a wicked fast grep
 * [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim): Full path fuzzy file, buffer, mru, tag, ... finder for Vim
@@ -58,33 +43,49 @@ I recommend reading the docs of these plugins to understand them better. Each pl
 * [vim-surround](https://github.com/tpope/vim-surround): quoting/parenthesizing made simple
 * [vim-plug](https://github.com/junegunn/vim-plug): Minimalist Vim Plugin Manager
 
+## Include your own stuff
+
+Your own settings should be added to *~/.cc-vimrc/my_configs.vim*
+
+**Vim plugins**
+
+For instance, via vim-plug you can install [vim-rails](https://github.com/tpope/vim-rails)
+```
+$ vim ~/.cc-vimrc/my_configs.vim
+...
+call plug#begin('~/.cc-vimrc/bundle')
+Plug 'tpope/vim-rails'
+call plug#end
+...
+```
+
+**Vim settings**
+
+Show invisible characters. So it's easier to you to see the code format.
+```
+$ vim ~/.cc-vimrc/my_configs.vim
+...
+set listchars=eol:$,tab:\|\ ,trail:~,extends:>,precedes:<
+set list
+...
+```
+
+## Development fonts
+
+If you change your terminal font, it should affect to vim also.
+
+* [Microsoft Cascadia](https://github.com/microsoft/cascadia-code) (Recommended for Windows Terminal)
+* [Source Code Pro](https://adobe-fonts.github.io/source-code-pro/)
+* [IBM Plex Mono font](https://ibm.github.io/type/)
+* [Hack](http://sourcefoundry.org/hack/)
 
 ## Color scheme
 
-* [tomorrow-theme](https://github.com/chriskempson/tomorrow-theme)
-* [gruvbox](https://github.com/morhetz/gruvbox)
-* [papercolor](https://github.com/NLKNguyen/papercolor-theme)
-
-
-## How to include your own stuff?
-
-After you have installed the setup, you can create **~/.cuncon-vimrc/my_configs.vim** to fill in any configurations that are important for you. For instance, my **my_configs.vim** looks like this:
-
-	~/.cuncon-vimrc (master)> cat my_configs.vim
-	map <leader>ct :cd ~/projects/cuncon-vimrc<cr>
-	map <leader>cw :cd ~/projects/linux<cr> 
-
-You can also install your plugins, for instance, via vim-plug you can install [vim-rails](https://github.com/tpope/vim-rails) by add some thing like this to ~/.cuncon-vimrc/my_config.vim:
-
-	call plug#begin('~/.cuncon-vimrc/bundle')
-	Plug 'tpope/vim-rails'
-	call plug#end
-
+You could download new vim schemes from [Vim Colors](https://vimcolors.com/) and put them to *~/.cc-vimrc/colors*
 
 ## Key Mappings
 
 The [leader](http://learnvimscriptthehardway.stevelosh.com/chapters/06.html#leader) is `,`, so whenever you see `<leader>` it means `,`.
-
 
 ### Plugin related mappings
 
@@ -253,7 +254,15 @@ Cope mappings:
     map <leader>p :cp<cr>
 
 
-## How to uninstall
-Just do following:
-* Remove ~/.cuncon-vimrc
-* Restore the old vimrc ~/.vimrc.bak
+## Update to latest version
+
+```
+$ cd ~/.cc-vimrc
+$ git pull --rebase
+```
+
+## Uninstall vimrc :(
+```
+$ rm -r ~/.cc-vimrc
+$ mv ~/.vimrc.bak ~/.vimrc
+```
