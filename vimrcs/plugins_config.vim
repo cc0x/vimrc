@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""
 " => Vim-plug
 """"""""""""""""""""""""""""""
-call plug#begin('~/.cuncon-vimrc/bundles')
+call plug#begin('~/.cc-vimrc/bundles')
 Plug 'mileszs/ack.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/goyo.vim'
